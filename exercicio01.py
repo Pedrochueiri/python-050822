@@ -11,6 +11,7 @@
 #controlador()
 
 #função menu()
+from ast import Num
 from unittest import result
 
 
@@ -79,3 +80,12 @@ def controlador(n1,n2,op):
     else:
         result = "Opção inválida"
     return result
+
+#-------------------------------------------------
+#programa Principal
+print("***- Calculadora Simples -***")
+op = menu()
+n1 = entrada_de_dados()
+n2 = entrada_de_dados()
+result = controlador(n1,n2,op) #assinatura
+imprimir(result)
